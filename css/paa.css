@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(102, 102, 102, 0.123) 0%, rgba(0, 0, 0, 0.500) 70%, rgb(0, 0, 0) 100%), url(/assets/img1/3.1.png);
+    background-size: cover;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.top-btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #A85751;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #ECDFC2;
+    font-size: 22px;
+}
+/* landing */
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2% 7%;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 28%;
+    bottom: 50%;
+}
+.landing h1 {
+    font-size: 210px;
+    font-family: 'Bebas Neue', cursive;
+}
+.landing h2 {
+    font-size: 30px;
+    margin-top: -65px;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 5px;
+}
+.landing a {
+    margin-top: 30px;
+    padding: .5rem 1.5rem;
+    color: rgb(199, 199, 199);
+    background-color: black;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 20px;
+    transition: color 0.10s ease-in-out, background-color 0.10s ease-in-out, border-color 0.10s ease-in-out, box-shadow 0.10s ease-in-out;
+}
+.landing a:hover {
+    /* background-color: rgb(53, 50, 41); */
+    background-color: #A85751;
+    color: #ECDFC2;
+    border-radius: 5px;
+}
+/* explore */
+.explore {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding-top: 50px;
+}
+.explore-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 90px 660px;
+    grid-template-areas: "title title title"
+                         "birth life death" ;
+    justify-content: center;
+    align-items: center;
+}
+.explore-grid h1 {
+    grid-area: title;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.birth-img {
+    grid-area: birth;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.life-img {
+    grid-area: life;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.death-img {
+    grid-area: death;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.explore-img { 
+    filter: grayscale();
+    width: 100%;
+    height: 700px;
+    object-fit: contain;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(63, 63, 63, 0.795)), to(rgba(0, 0, 0, 0)));
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.596), rgba(255, 255, 255, 0));
+}
+.img-overlay {
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 60%;
+    padding: 5.1rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+} 
+.img-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.img-overlay:hover {
+    opacity: 1;
+}
+.img-overlay:hover > * {
+    transform: translateY(0);
+}
+.img-title {
+    font-style: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.img-overlay p {
+    font-style: italic;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img-overlay a {
+    color: white;
+    text-align: center;
+}
+.img-overlay a:hover {
+    color: #A85751;
+    cursor: pointer;
+}
+/* explore-more */
+.explore-more a {
+    color: #a09989;
+}
+.explore-more a:hover {
+    color: #ECDFC2;
+}
+/* birth */
+.birth {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px ;
+    color: #f0e8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.birth-img {
+    flex: 0 0 600px;
+}
+.birth-words {
+    flex: 1;
+    padding-right: 140px ;
+}
+.birth-words h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.birth-words p{
+    text-align: justify;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.b-img {
+    max-width: 100%;
+    max-height: 750px;
+    object-fit: contain;
+}
+/* footer */
+footer { 
+    padding: 2rem 0;
+    background-color: rgb(255, 8, 132);
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
