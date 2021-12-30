@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(102, 102, 102, 0.123) 0%, rgba(0, 0, 0, 0.500) 70%, rgb(0, 0, 0) 100%), url(/assets/img1/3.1.png);
+    background-size: cover;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.top-btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #df5c53;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #ECDFC2;
+    font-size: 22px;
+}
+.top-btn:hover {
+    background-color: #b94f48;
+}
+/* landing */
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2% 7%;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 28%;
+    bottom: 50%;
+}
+.landing h1 {
+    font-size: 210px;
+    font-family: 'Bebas Neue', cursive;
+}
+.landing h2 {
+    font-size: 30px;
+    margin-top: -65px;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 6px;
+}
+.landing a {
+    margin-top: 30px;
+    padding: .5rem 1.5rem;
+    color: rgb(199, 199, 199);
+    background-color: black;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 20px;
+}
+.landing a:hover {
+    background-color: #df5c53;
+    color: #ECDFC2;
+    border-radius: 5px;
+    transition: color 0.10s ease-in-out, background-color 0.10s ease-in-out, border-color 0.10s ease-in-out, box-shadow 0.10s ease-in-out;
+}
+/* explore */
+.explore {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding-top: 50px;
+}
+.explore-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 90px 660px;
+    grid-template-areas: "title title title"
+                         "birth life death" ;
+    justify-content: center;
+    align-items: center;
+}
+.explore-grid h1 {
+    grid-area: title;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.birth-img {
+    grid-area: birth;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.life-img {
+    grid-area: life;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.death-img {
+    grid-area: death;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.explore-img { 
+    filter: grayscale();
+    width: 100%;
+    height: 700px;
+    object-fit: contain;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(63, 63, 63, 0.795)), to(rgba(0, 0, 0, 0)));
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.596), rgba(255, 255, 255, 0));
+}
+.img-overlay {
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 60%;
+    padding: 5.1rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+} 
+.birth-img:hover .img-overlay, .life-img:hover .img-overlay, .death-img:hover .img-overlay {
+    opacity: 1;
+}
+.img-title {
+    font-style: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.img-overlay p {
+    font-style: italic;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.img-overlay a {
+    color: white;
+    text-align: center;
+}
+.img-overlay a:hover {
+    color: #df5c53;
+    cursor: pointer;
+}
+/* explore-more */
+.explore-more a {
+    color: #a09989;
+}
+.explore-more a:hover {
+    color: #ECDFC2;
+}
+.sources {
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 40px;
+    color: white;
+}
+/* birth */
+.birth {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px ;
+    color: #f0e8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.birth-img {
+    flex: 1;
+}
+.birth-words {
+    flex: 1;
+    padding-right: 140px ;
+}
+.birth-words h1 {
+    width: 100%;
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.birth-words p {
+    width: 100%;
+    text-align: justify;
+    font-size: 21px;
+    text-indent: 45px;
+}
+.b-img {
+    width: 100%;
+    height: 750px;
+    object-fit: contain;
+}
+/* life */
+.life {
+    height: 100vh;
+    width: 100%;
+    background-color: black;    
+    padding-top: 30px; 
+    padding-bottom: 30px ;
+    color: #f0e8d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    position: relative;
+    padding-bottom: 70px;
+}
+.box h1 {
+    line-height: 60px;
+    flex: 0 0 60px;
+}
+.achievement-box {
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+}
+.achievement-box .achievement {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 25%;
+}
+.achievement-box .achievement img {
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    filter: grayscale();
+}
+.achievement-box .achievement img:hover {
+    filter: sepia();
+    cursor: pointer;
+}
+.achievement:hover .a-title{
+    opacity: 1;
+}
+.a-title {
+    opacity: 0;
+    color: white;
+    margin-top: 20px;
+}
+.achievement a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.life-img-more {
+    width: 300px;
+    height: 100px;
+    filter: grayscale();
+    border-radius: 100px;
+}
+.life-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    font-size: 10px;
+}
+.life p {
+    padding-bottom: 10px;
+}
+.life-content p {
+    flex: 1;
+}
+.life-img-more-box {
+    flex: 1;
+}
+.life ul {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 100px;
+    width: 100%;
+}
+.life ul li {
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(53, 53, 53);
+    color:  rgb(116, 116, 116);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-inline: 40px;
+}
+.life ul li:hover {
+    background-color: #b94f48;
+    box-shadow: 0 0 0 4px #fc6b61,
+                0 0 0 6px #b94f48;
+}
+.life ul li .life-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    bottom: 55px;
+    width: 1000px;
+    background-color: rgba(53, 53, 53, 0.774);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+}
+.life-words {
+    display: flex;
+}
+.life-words h2 {
+    margin-right: 10px;
+    flex: 1;
+}
+.life-words p {
+    flex: 1;
+    text-align: justify;
+}
+.life ul li:hover .life-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+} 
+/* footer */
+footer { 
+    padding: 2rem 0;
+    background-color: rgb(255, 8, 132);
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+
+/* responsive */
+@media screen and (max-width:1000px){
+    .header, .landing, .explore-grid, .birth, .life, .achievement-box {
+        display: block;
+        justify-content: center;
+    }
+    /* top-btn */
+    .top-btn {
+        right: 8px
+    }
+    /* landing */
+    .landing h1 {
+        font-size: 100px;
+        margin-bottom: 45px;
+    }
+    .landing h2 {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .landing a {
+        font-size: 8px;
+        width: auto;
+        padding: .1rem 1rem;
+    }
+    /* explore */
+    .explore-grid h1 {
+        font-size: 25px;
+        letter-spacing: 15px;
+    }
+    .img-overlay {
+        position: relative;
+        background-color: #5a5a5a44;
+        opacity: 1;
+        padding: 20px;
+        margin: auto;
+        align-items: center;
+    }
+    .img-title {
+        font-size: 14px;
+    }
+    .img-overlay p {
+        font-size: 10px;
+    }
+    .explore-img {
+        height: 400px;
+    }
+    /* birth */
+    .birth-words {
+        padding-right: 80px;
+        padding-left: 80px;
+        margin: 10px auto;
+    }
+    .birth h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .birth p {
+        font-size: 15px;
+    }
+    .b-img {
+        height: 400px;
+    }
+}
