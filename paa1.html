@@ -14,14 +14,14 @@
     <!-- landing -->
     <header>
         <i class="fa-solid fa-angles-up"></i>
-        <section id="landing" class="landing">
-            <h1>ALAN TURING</h1>
+        <div id="landing" class="landing">
+            <h1>ALAN TURING</h1>    
             <h2>The birth, life, and death</h2>
             <a href="#explore" explore-hover="LET'S GO">EXPLORE</a>
-        </section>
+        </div>
     </header>
     <!-- explore -->
-    <div id="explore" class="explore">
+    <div id="explore" class="explore">                              <!-- explore -->
         <div class="explore-grid">
             <h1>BIOGRAPHY</h1>
             <div class="birth-img">                                                   <!-- birth -->
@@ -36,22 +36,22 @@
                 <img class="explore-img" src="/assets/img1/life.jpg">
                 <div class="img-overlay"><a href="#life">                       
                     <div class="img-title">Life</div>
-                    <p class="img-desc">Maida Vale, London, United Kingdom (June 23, 1912)</p>
+                    <p class="img-desc">University, War Service, Post-War</p>
                 </a>
                 </div>
             </div>
             <div class="death-img">                                                     <!-- death -->
                 <img class="explore-img" src="/assets/img1/death.png">
-                <div class="img-overlay"><a href="#">
+                <div class="img-overlay"><a href="#death">
                     <div class="img-title">Death</div>
-                    <p class="img-desc">Maida Vale, London, United Kingdom (June 23, 1912)</p>
+                    <p class="img-desc">The How, Where, When, and Why</p>
                 </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- explore-more -->
-    <div class="explore-more">
+    <div class="explore-more">                                      <!-- explore-more -->
         <!-- birth -->
         <div id="birth" class="birth">
             <div class="birth-img">
@@ -107,44 +107,99 @@
                         <div class="a-title">Bombe (1940)</div>
                     </div>
                 </div>
+                <a class="life-more-btn" href="#life-more">MORE <i class="fas fa-angle-down"></i></a>
             </div>
-            <ul>
-                <li>                                         <!-- uni -->
-                    <div class="life-label">UNIVERSITY</div>
-                    <div class="life-content">
-                        <di class="life-words">
-                            <h2>King's College</h2>
-                                <p>
-                                    Turing attended King's College from 1931 to 1934, graduating with a degree in Mathematics with first-class honors.
-                                    He was then elected as a Fellow of the King's College. 
-                                </p>
-                        </di>
-                        <di class="life-words">
-                            <h2>Princeton University</h2>
-                                <p>
-                                    Turing studied in Princeton University from 1936 to 1938. He earned his Ph.D. in mathematical logic.
-                                </p>
-                        </di>
-                    </div>
-                </li>
-                <li>                                         <!-- war service -->
-                    <div class="life-label">SERVICE</div>
-                    <div class="life-content">
-                        <p>King's College (1931)</p>
-                    </div>
-                </li>
-                <li>                                         <!-- post-war -->
-                    <div class="life-label">POSTWAR</div>
-                    <div class="life-content">
-                        <p>King's College (1931)</p>
-                    </div>
-                </li>
-            </ul>
         </div> 
-        <!-- death -->
-        <div class="death">
-
+        <!-- life more -->
+        <div id="life-more" class="life-more">
+            <div class="lm-conent">
+                <div class="lm-section">                            <!-- university -->
+                    <h3>UNIVERSITY</h3>
+                    <div class="lm-words">
+                        <img src="/assets/img1/kings college.jpg">
+                        <h4>King's College</h4>
+                    </div>
+                    <div class="lm-words">
+                        <p>In 1931, Turing studied mathematics in King's College in London, United Kingdom. He graduated with first class honors in 1934, and was 
+                            elected as a Fellow of the college in 1935.</p>
+                    </div>
+                    <div class="lm-words">
+                        <img src="/assets/img1/princeton.jpg">
+                        <h4>Princeton University</h4>
+                    </div>
+                    <div class="lm-words">
+                        <p>Turing earned his Ph.D. in mathematical logic after studying in the university from 1936 to 1938.</p>
+                    </div>
+                </div>      
+                <div class="lm-section">                            <!-- wartime service -->            
+                    <h3>WARTIME SERVICE</h3>
+                    <div class="lm-words">
+                        <img src="/assets/img1/bletchley park.jfif">
+                        <h4>Bletchley Park</h4>
+                    </div>
+                    <div class="lm-words">
+                        <p>A day after the declaration of the WWII in 1939, Turing arrived at the Bletchley Park after being requested to join the 
+                            Government Codes and Ciphers School where he took up a full-time role in deciphering German military codes. This lead
+                            to the development of the Bombe in 1940.</p>
+                    </div>
+                    <div class="lm-words">
+                        <img src="/assets/img1/enigma.png">
+                        <h4>The Enigma Code</h4>
+                    </div>
+                    <div class="lm-words">
+                        <p>With the help of the Bombe, Turing and his team were able to decrypt German secret messages encrypted by the Enigma in 1942. 
+                            Polish mathematicians lead by Marian Rejewski were the first to read Enigma messages before the Germans increased its security, 
+                            which lead to them turning over the messages to the British.
+                        </p>
+                    </div>
+                </div>
+                <div class="lm-section">                            <!-- post-war -->
+                    <h3>Post-War</h3>
+                    <div class="lm-words">
+                        <img src="/assets/img1/obe.jpg">
+                        <h4>Order of the British Empire</h4>
+                    </div>
+                    <div class="lm-words">
+                        <p>A year after the end of WWII in 1945, Turing was awarded an OBE for his achievements and contributions in which he helped in the decyphering
+                            of German codes that helped change the course of the war.
+                        </p>
+                    </div>
+                    <div class="lm-words">
+                        <img src="/assets/img1/npl.jpg">
+                        <h4>Published Works</h4>
+                    </div>
+                    <div class="lm-words">
+                        <p>In 1946, Turing joined the National Physical Laboratory where he published a paper with the first  the first detailed design of a 
+                            stored-program computer. He also published a report called 'Intelligent machinery' that discusses about the possiblity of machines to
+                            possess the intelligence of a human. In 1950, he published'Computing Machinery and Intelligence' in which he develops the Turing Test, 
+                            an attempt to define a standard for a machine to be called intelligent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lm-content-more">
+                <p>In 1952, Turing started a relationship with 19-year-old man named Alan Murray. After a robbery in his house, he acknowledged his homosexual 
+                    relationship with Murray, which lead to his prosecution for his homosexual acts. He opted for chemical castration by a series of injections of female hormones
+                    as an alternative to being imprisoned.
+                </p>
+            </div>
         </div>
+        <!-- death -->
+        <div  id="death" class="death">
+            <h1>DEATH</h1>
+            <h3>The How, Where, When, and Why</h3>
+            <div class="death-content">      
+                <div class="death-section">
+                    <p>On June 7, 1954, 16 days before his 42nd birthday, Turing died in his home in Wilmslow, Chesire, England. He had died a day earlier and
+                        was found the next by his housekeeper. The cause of death was determined to be suicide by cyanide poisoning. A half-eaten apple laced was cyanide
+                        was found next to his body. There are many speculations as to why Turing did it, many of which are associated with the mental effects of 
+                        the medication inflicted on to him by the court and the discriminations thrown unto him due to his sexuality.
+                    </p>
+                    <img src="/assets/img1/tomb.JPG">
+                </div>
+            </div>
+        </div>
+        <a class="top-btn" href="#explore"><i class="fas fa-angle-up"></i></a>
     </div>
     <!-- <footer>
         DIS IS DA FOOTER.
