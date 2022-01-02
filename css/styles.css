@@ -6916,6 +6916,10 @@ textarea.form-control-lg {
   display: flex !important;
 }
 
+.d-flex a {
+  margin: auto;
+}
+
 .d-inline-flex {
   display: inline-flex !important;
 }
@@ -11466,6 +11470,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.box {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.box h1 {
+  flex: 1;
+  color: #e1dcca;
+}
+
+.box a {
+  flex: 1;
+  color: #e1dcca;
+  text-decoration: none;
+}
+
 html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
