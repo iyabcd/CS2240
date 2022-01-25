@@ -186,6 +186,52 @@ a.btn:hover {
 .down-btn:hover {
     color: rgba(255, 72, 0, 0.877);
 }
+/* footer */
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #575757;
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-upper {
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+    flex: 1;
+}
+.footer-upper h5 {
+    text-align: center;
+    color: orange;
+}
+.footer-text, .footer-socials {
+    flex: 1;
+    margin: 0px 30px;
+    font-size: 16px;
+}
+.footer-socials {
+    text-align: center;
+}
+.footer a {
+    margin: 10px;
+}
+.copyright {
+    text-align: center;
+    color: white;
+    flex:1;
+}
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width: 992px) {
     .header .container .row {
         text-align: center;

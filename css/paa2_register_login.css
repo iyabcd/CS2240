@@ -29,6 +29,9 @@ h4 {
     background-color: orange;
     border: 1px solid orange;
 }
+p {
+    padding-bottom: 90px;
+}
 p a {
     text-decoration: none;
     color: darkorange;
