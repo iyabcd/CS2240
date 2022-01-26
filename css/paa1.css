@@ -278,7 +278,7 @@ a {
     position: relative;
     display: flex;
     padding: 50px 0;
-    width: 80%;
+    width: 100%;
 }
 .achievement-box .achievement {
     display: flex; 
