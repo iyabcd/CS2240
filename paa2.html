@@ -164,18 +164,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md p-5" align="center">
-                    <!-- <div class="brand">
-                        <span style="color: orange; letter-spacing: 20px; font-size: 30px; font-weight: bolder; margin: 0px 20px;">GROCERS</span>
-                    </div> -->
                     <h2>GROCERS</h2>
                     <h1>Available Plans</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mt-3">
+                    <div class="card mt-3" data-toggle="modal" data-target="#meatModal">
                         <div class="product-1 align-items-center p-2 text-center">
-                            <img src="./assets/paa2/card4.png" class="rounded" width="160">
+                            <a><img src="./assets/paa2/card4.png" class="rounded" width="160"></a>
                             <h5>All-meat</h5>
                             <div class="mt-info">
                                 <span class="text1 d-block">For the meat lovers.</span>
@@ -192,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-3">
+                    <div class="card mt-3" data-toggle="modal" data-target="#vegModal">
                         <div class="product-1 align-items-center p-2 text-center">
                             <img src="./assets/paa2/card5.png" class="rounded" width="160px">
                             <h5>All-vegetarian</h5>
@@ -211,7 +208,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-3">
+                    <div class="card mt-3" data-toggle="modal" data-target="#mixModal">
                         <div class="product-1 align-items-center p-2 text-center">
                             <img src="./assets/paa2/card6.png" class="rounded" width="160px">
                             <h5>Mixed</h5>
@@ -233,6 +230,71 @@
             <a class="btn btn-first" href="./paa2_register.html">Register</a>
         </div>
     </section>
+    <!-- meat modal -->
+    <div class="modal fade" id="meatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">All-Meat Package</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">             
+                This package includes: <br> Red Meat – Beef, Goat, Lamb. <br>
+                Poultry – Chicken and Turkey. <br>
+                Pork – Pig's meat. <br><br>
+                May also include seafood if specified (+ ₱3,000.00).
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- veg modal -->
+    <div class="modal fade" id="vegModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">All-Vegetarian Package</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                This package includes: <br>     
+                Fruits: Apples, bananas, berries, oranges, melons, pears, peaches. <br>
+                Vegetables: Leafy greens, asparagus, broccoli, tomatoes, carrots. <br>
+                Grains: Quinoa, barley, buckwheat, rice, oats. <br>
+                Legumes: Lentils, beans, peas, chickpeas. <br>
+                Nuts: Almonds, walnuts, cashews, chestnuts. <br>
+                Seeds: Flaxseeds, chia and hemp seeds. <br>
+                Healthy fats: Olive oil, avocados. <br>
+                Proteins: Tofu, seitan, natto, eggs, dairy products. <br><br>
+                May also include seafood if specified (+ ₱3,000.00).
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- mix modal -->
+    <div class="modal fade" id="mixModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Mixed Package</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">             
+                This package includes: <br>
+                Fruits and Vegetables. <br>
+                Red Meat - Beef. <br>
+                Pork - Pig's Meat. <br>
+                Poultry - Chicken and Turkey. <br><br>
+                May also include seafood if specified (+ ₱3,000.00).
+            </div>
+        </div>
+        </div>
+    </div>
     <section class="footer">
         <div class="footer-upper">
             <div class="footer-text">
@@ -249,10 +311,10 @@
             </div>
             <div class="footer-contact">
                 <h5>Contact Us</h5>
-                  <p><i class="fas fa-home me-3"></i> Davao del Sur, DC 8000, PH</p>
+                  <p><i class="fas fa-home me-3"></i> Roxas Avenue , DC 8000, PH</p>
                   <p>
                     <i class="fas fa-envelope me-3"></i>
-                    info@grocers.com
+                    info@grocers.ph
                   </p>
                   <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
                   <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>

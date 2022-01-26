@@ -156,9 +156,16 @@ a.btn:hover {
     text-decoration: none;
     color: white;
 }
-.plans .card:hover {
+.plans .card:hover  {
     transform:translateY(-15px);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.plans .card:hover h5 {
+    color:black;
+}
+.plans .card:hover ul li {
+    color:black;
 }
 .plans .card h5 {
     color: #ff9900;
@@ -251,7 +258,6 @@ a.btn:hover {
     font-weight: bolder; 
     margin: 0px 20px;
 }
-
 
 @media screen and (max-width: 992px) {
     body {
