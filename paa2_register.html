@@ -84,8 +84,9 @@
                             </div>
                             <div class="mb-3 col-md-12">
                                 <div class="form-check">
-                                    <input type="checkbox" name="accept-terms" class="form-check-input">
-                                    <label for="accept-terms" class="">Accept <a class="terms" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a></label>
+                                    <input type="checkbox" class="form-check-input" id="accept-terms" required>
+                                    <label for="accept-terms" class="form-check-label">Accept <a class="terms" data-toggle="modal" data-target="#termsModal">Terms & Conditions</a></label>
+                                    <div class="invalid-feedback">This should not be empty.</div>
                                 </div>
                             </div>
                             <div class="col-md-12 text-lg-center">
