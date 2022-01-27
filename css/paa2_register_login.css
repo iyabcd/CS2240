@@ -21,8 +21,16 @@ html {
 form {
     box-shadow: -1px -1px 10px #bebebe ;
 }
-h4 {
+h5 {
     color: darkorange;
+}
+h5 a {
+    color: rgb(190, 190, 190);
+    transition: 0.5s;
+}
+.text-nonactive a:hover {
+    color: rgb(255, 102, 0);
+    text-decoration: none;
 }
 .btn-outline-secondary {
     border: 1px solid darkorange;
