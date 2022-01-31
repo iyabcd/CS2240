@@ -134,6 +134,7 @@ a.btn:hover {
 }
 /* plans */
 .plans {
+    padding: 20px 0px;
     height: fit-content;
     text-align: center;
 }
