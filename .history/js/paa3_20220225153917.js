@@ -13,7 +13,6 @@ carouselAbout();
 flexCards();
 forModal();
 forTabs();
-forDialogs();
 autoComplete();
 validateForm();
 
@@ -267,18 +266,12 @@ function forTabs() {
     event: "mouseover"
   });
 }
-function forDialogs() {
-  $("#dialog").dialog({
-    modal: true,
-    autoOpen: false,
-    title: "Meet our team.",
-    width: 400,
-    height: 400
-  });
-  $("#btnShow").click(function () {
-    $('#dialog').dialog('open');
-});
-}
+// function forDialogs() {
+//   $("#show-team").click(function () {
+//     console.log('clicked');
+//     $('#dialog').dialog('open');
+// });
+// }
 function autoComplete() {
   var availTags = [
     "@gmail.com",

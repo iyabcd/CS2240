@@ -13,7 +13,6 @@ carouselAbout();
 flexCards();
 forModal();
 forTabs();
-forDialogs();
 autoComplete();
 validateForm();
 
@@ -268,14 +267,8 @@ function forTabs() {
   });
 }
 function forDialogs() {
-  $("#dialog").dialog({
-    modal: true,
-    autoOpen: false,
-    title: "Meet our team.",
-    width: 400,
-    height: 400
-  });
-  $("#btnShow").click(function () {
+  $("#show-team").click(function () {
+    console.log('clicked');
     $('#dialog').dialog('open');
 });
 }

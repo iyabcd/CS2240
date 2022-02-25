@@ -271,9 +271,9 @@ function forDialogs() {
   $("#dialog").dialog({
     modal: true,
     autoOpen: false,
-    title: "Meet our team.",
-    width: 400,
-    height: 400
+    title: "jQuery Dialog",
+    width: 300,
+    height: 150
   });
   $("#btnShow").click(function () {
     $('#dialog').dialog('open');

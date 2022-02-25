@@ -35,7 +35,7 @@ h4 {
     padding: 10px;
     font-size: 18px;
     color: var(---tertiary);
-    font-size: 25px;
+    font-size: 10px;
 }
 .welcome h1:hover {
     color: var(---secondary);

@@ -13,7 +13,6 @@ carouselAbout();
 flexCards();
 forModal();
 forTabs();
-forDialogs();
 autoComplete();
 validateForm();
 
@@ -29,6 +28,7 @@ function typeHeader() {
 function navPos() {
   $(window).scroll(function() {
     var _wscoll = $(window).scrollTop();
+    console.log(_wscoll);
     if(_wscoll > 760){
       $('.navbar').css('position','fixed');
     }else {
@@ -268,16 +268,10 @@ function forTabs() {
   });
 }
 function forDialogs() {
-  $("#dialog").dialog({
-    modal: true,
-    autoOpen: false,
-    title: "Meet our team.",
-    width: 400,
-    height: 400
-  });
-  $("#btnShow").click(function () {
-    $('#dialog').dialog('open');
-});
+  $('#pic-1').click( function() {
+    console.log('clicked');
+    $( "#dialog" ).dialog();
+  })
 }
 function autoComplete() {
   var availTags = [

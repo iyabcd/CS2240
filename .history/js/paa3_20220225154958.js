@@ -273,7 +273,7 @@ function forDialogs() {
     autoOpen: false,
     title: "Meet our team.",
     width: 400,
-    height: 400
+    height: 900
   });
   $("#btnShow").click(function () {
     $('#dialog').dialog('open');
