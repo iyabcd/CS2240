@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/paa3/logo.png" type="image/icon type">
+    <title>Panes PAA3 - Something</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,900;1,200;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/paa3.css">
+</head>
+<body>
+    <!-- <div class="welcome">
+        <img class="fade-in" src="./assets/paa3/logo.png"></img>
+        <h1  class="fade-in">ENTER</h1>
+    </div> -->
+    <div class="header" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="title-text">
+                    <h1 class="title-txt" id="title-txt">DIGITAL STUDIOS</h1>
+                </div>
+            </div>
+            <div class="row">
+                <p class="title-sub" id="title-sub">Experience life through <span class="typing"></span></p>
+            </div>
+            <div class="row down-btn mt-4">
+                <a class="down-btn" href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black p-lg-0" id="navbar">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#"><img src="./assets/paa3/logo_blue.png"></a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home" id="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#about" id="#about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#services" id="#services">services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" id="#contact">contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 section-label">
+                    <h1 class="section-label-txt">ABOUT</h1>
+                </div>
+                <div class="col-sm-8 section-content">
+                    <div class="row">
+                        <h4>We are Digital Studios</h4>
+                    </div>
+                    <div class="row">
+                        <p>The amber droplet hung from the branch, reaching fullness and ready to drop. It waited. While many of the other droplets were satisfied to form as big as they could and release, this droplet had other plans. It wanted to be part of history. It wanted to be remembered long after all the other droplets had dissolved into history. So it waited for the perfect specimen to fly by to trap and capture that it hoped would eventually be discovered hundreds of years in the future.</p>
+                    </div>
+                    <div class="row">
+                        <h4>Our Team</h4>
+                    </div>
+                    <ul class="slider">
+                        <li><img src="./assets/paa3/about1.png" alt=""></li>
+                        <li><img src="./assets/paa3/about2.png" alt=""></li>
+                        <li><img src="./assets/paa3/about3.png" alt=""></li>
+                        <li><img src="./assets/paa3/about4.png" alt=""></li>
+                        <li><img src="./assets/paa3/about3.png" alt=""></li>
+                        <li><img src="./assets/paa3/about1.png" alt=""></li>
+                        <li><img src="./assets/paa3/about2.png" alt=""></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 section-label">
+                    <h1 class="section-label-txt">SERVICES</h1>
+                </div>
+                <div class="col-sm-8 section-content">
+                    <div class="options">
+                        <div class="option pic">
+                            <div class="label">
+                               <div class="icon">
+                                   <i class="fas fa-images"></i>
+                               </div>
+                               <div class="info">
+                                  <div class="main">PHOTOGRAPHY</div>
+                                    <div class="sub" id="modal-box-pic" href="#modal-pic">Learn More</div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="option vid">
+                            <div class="label">
+                               <div class="icon">
+                                   <i class="fas fa-video"></i>
+                                </div>
+                               <div class="info">
+                                  <div class="main">VIDEOGRAPHY</div>
+                                  <div class="sub" id="modal-box-vid" href="#modal-vid">Learn More</div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="option anim">
+                            <div class="label">
+                               <div class="icon">
+                                   <i class="fas fa-desktop"></i>
+                               </div>
+                               <div class="info">
+                                  <div class="main">ANIMATOGRAPHY</div>
+                                  <div class="sub" id="modal-box-anim" href="#modal-anim">Learn More</div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 section-label">
+                    <h1 class="section-label-txt">CONTACT</h1>
+                </div>
+                <div class="col-sm-8 section-content">
+                    <div class="row">
+                        <h4>Work with us</h4>
+                    </div>
+                    <div class="row">
+                        <p>There have been days when I wished to be separated from my body, but today wasn’t one of those days.</p>
+                        <hr>
+                    </div>
+                    <form class="mt-3" id="contact-form">
+                        <div class="form-row p-1">
+                            <div class="mb-3 col-md-6">
+                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" >
+                                <div class="invalid-feedback">This should only contain letters.</div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" >
+                                <div class="invalid-feedback">This should only contain letters.</div>
+                            </div>
+                        </div>
+                        <div class="form-row p-1">
+                            <div class="mb-3 col-md-6">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="Email" >
+                                <div class="invalid-feedback">This can contain letters, number, and special characters.</div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <select type="text" name="address" id="address" class="form-control">
+                                    <option disabled selected value>City</option>
+                                    <option value="manila">Manila</option>
+                                    <option value="cebu">Cebu</option>
+                                    <option value="davao">Davao</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <div class="form-row p-1">
+                            <div class="mb-3 col-md-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" name="terms" data-toggle="modal" data-target="#termsModal" required>
+                                    <label for="terms" class="form-check-label">I agree to the <a class="terms" data-toggle="modal" data-target="#termsModal">terms & conditions</a>.</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-lg-right">
+                                <button type="submit" class="btn submit">Submit</button>                            
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row down-btn mt-4">
+                <a class="down-btn" href="#footer"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <hr>
+        <div class="footer-content">
+            <div class="footer-text">
+                <h5><span style="color: #ECA400; font-size: 25px; font-weight: bold;">DIGITAL STUDIOS</span></h5>
+                <a>Experience life through photos, videos, and animations.</a>
+            </div>
+            <div class="footer-socials">
+                <h5>Follow Us</h5>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://iyabcd.github.io/CS2240/"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-contact">
+                <h5>Contact Us</h5>
+                  <p><i class="fas fa-home me-3"></i> Roxas Avenue , DC 8000, PH</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@grocers.ph
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            </div>
+        </div>
+            
+        <div class="copyright">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="./paa2.html#landing">digitalstudios.ph</a>
+        </div>
+    </div>
+    <!-- modals -->
+    <div id="modal-pic">
+        <div class="box">
+            <div  id="btn-close-modal" class="close-modal-pic"><i class="fas fa-times"></i></div>   
+            <div class="tabs-box">
+                <div id="tabs-pic">
+                    <ul>
+                      <li><a href="#tabs-1">About</a></li>
+                      <li><a href="#tabs-2">Gallery</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <h5>Experience life through <span style="color: #ECA400;">photos</span></h5>
+                                <p style="font-weight: 250;">Matt told her to reach for the stars, but Veronica thought it was the most ridiculous advice she'd ever received. Sure, it had been well-meaning when he said it, but she didn't understand why anyone would want to suggest something that would literally kill you if you actually managed to achieve it.
+                                    A long black shadow slid across the pavement near their feet and the five Venusians, very much startled, looked overhead. They were barely in time to see the huge gray form of the carnivore before it vanished behind a sign atop a nearby building which bore the mystifying information "Pepsi-Cola."
+                                </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid" src="./assets/paa3/about1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <div class="gallery">
+                            <div class="row m-2 align-content-center justify-content-center">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                </div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                </div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                </div>
+                            </div>
+                            <div class="row m-2 align-content-center justify-content-center">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                </div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                </div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                </div>
+                            </div>
+                            <div class="row m-2 align-content-center justify-content-center">
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                </div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                </div>
+                                <div class="col-sm-4">
+                                    <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-vid">
+        <div class="box">
+            <div  id="btn-close-modal" class="close-modal-vid"><i class="fas fa-times"></i></div>   
+            <div class="tabs-box">
+                <div id="tabs-vid">
+                    <ul>
+                        <li><a href="#tabs-1">About</a></li>
+                        <li><a href="#tabs-2">Gallery</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                          <div class="row">
+                              <div class="col-sm-5">
+                                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                              </div>
+                              <div class="col-sm-6">
+                                  <img class="img-fluid" src="./assets/paa3/about1.jpg" alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="tabs-2">
+                          <div class="gallery">
+                              <div class="row m-2 align-content-center justify-content-center">
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                  </div>
+                              </div>
+                              <div class="row m-2 align-content-center justify-content-center">
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                  </div>
+                              </div>
+                              <div class="row m-2 align-content-center justify-content-center">
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-anim">
+        <div class="box">
+            <div  id="btn-close-modal" class="close-modal-anim"><i class="fas fa-times"></i></div>   
+            <div class="tabs-box">
+                <div id="tabs-anim">
+                    <ul>
+                        <li><a href="#tabs-1">About</a></li>
+                        <li><a href="#tabs-2">Gallery</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                          <div class="row">
+                              <div class="col-sm-5">
+                                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                              </div>
+                              <div class="col-sm-6">
+                                  <img class="img-fluid" src="./assets/paa3/about1.jpg" alt="">
+                              </div>
+                          </div>
+                      </div>
+                      <div id="tabs-2">
+                          <div class="gallery">
+                              <div class="row m-2 align-content-center justify-content-center">
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                  </div>
+                              </div>
+                              <div class="row m-2 align-content-center justify-content-center">
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                  </div>
+                              </div>
+                              <div class="row m-2 align-content-center justify-content-center">
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about1.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about2.jpg">
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <img class="img-fluid" src="./assets/paa3/about3.jpg">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e3e225e013.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" i></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+<script src="./js/paa3.js"></script>
+</body>
