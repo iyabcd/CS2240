@@ -17,6 +17,7 @@ forDialogs();
 autoComplete();
 validateForm();
 
+
 // functions
 function typeHeader() {
   let typed = new Typed('.typing', {
@@ -303,8 +304,7 @@ function autoComplete() {
     "@outlook.com",
   ];
   $('#email').autocomplete({
-    source: availTags,
-    minLength: 1
+    source: availTags
   });
 }
 function validateForm() {
@@ -360,12 +360,11 @@ function validateForm() {
   }
 }
 function clickSubmit() {
-  // $('#modal-submit').modal('hide');
   var a = $('#contact-form').valid();
-  $('#submit-contact').click(function(e) {
+  $('#submit-contact').click(function() {
     if(a){
       $('#modal-submit').modal();
-      e.preventDefault();
+      return false;
     }
   });
 }

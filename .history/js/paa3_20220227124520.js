@@ -3,6 +3,9 @@ checkWidth();
 $(window).resize(checkWidth);
 
 //document ready
+$(function() {
+  $('#modal-submit').modal('hide');
+});
 welcome();
 typeHeader();
 navLinks();
@@ -303,8 +306,7 @@ function autoComplete() {
     "@outlook.com",
   ];
   $('#email').autocomplete({
-    source: availTags,
-    minLength: 1
+    source: availTags
   });
 }
 function validateForm() {

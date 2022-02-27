@@ -3,6 +3,7 @@ checkWidth();
 $(window).resize(checkWidth);
 
 //document ready
+$('#modal-submit').modal('hide');
 welcome();
 typeHeader();
 navLinks();
@@ -16,6 +17,7 @@ forTabs();
 forDialogs();
 autoComplete();
 validateForm();
+
 
 // functions
 function typeHeader() {
@@ -303,8 +305,7 @@ function autoComplete() {
     "@outlook.com",
   ];
   $('#email').autocomplete({
-    source: availTags,
-    minLength: 1
+    source: availTags
   });
 }
 function validateForm() {
@@ -360,7 +361,6 @@ function validateForm() {
   }
 }
 function clickSubmit() {
-  // $('#modal-submit').modal('hide');
   var a = $('#contact-form').valid();
   $('#submit-contact').click(function(e) {
     if(a){

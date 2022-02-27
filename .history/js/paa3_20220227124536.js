@@ -303,8 +303,7 @@ function autoComplete() {
     "@outlook.com",
   ];
   $('#email').autocomplete({
-    source: availTags,
-    minLength: 1
+    source: availTags
   });
 }
 function validateForm() {

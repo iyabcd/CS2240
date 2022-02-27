@@ -16,6 +16,7 @@ forTabs();
 forDialogs();
 autoComplete();
 validateForm();
+$('#modal-submit').modal('hide');
 
 // functions
 function typeHeader() {
@@ -303,8 +304,7 @@ function autoComplete() {
     "@outlook.com",
   ];
   $('#email').autocomplete({
-    source: availTags,
-    minLength: 1
+    source: availTags
   });
 }
 function validateForm() {
@@ -360,7 +360,7 @@ function validateForm() {
   }
 }
 function clickSubmit() {
-  // $('#modal-submit').modal('hide');
+  $('#modal-submit').modal('hide');
   var a = $('#contact-form').valid();
   $('#submit-contact').click(function(e) {
     if(a){
