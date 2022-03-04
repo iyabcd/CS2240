@@ -497,6 +497,7 @@ h4 {
     .about .container > .row, .services .container > .row, .contact .container > .row {
         position: relative;
         top: 10px;
+        display: block;
     }
     .about .container, .services .container, .contact .container {
         min-height: fit-content;
