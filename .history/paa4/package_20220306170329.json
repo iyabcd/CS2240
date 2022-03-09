@@ -1,0 +1,18 @@
+{
+  "name": "paa4",
+  "version": "1.0.0",
+  "description": "app dev paa4 - crud using node js, mysql",
+  "main": "paa4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julienne Andrea S. Panes",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "save": "^2.4.0"
+  }
+}

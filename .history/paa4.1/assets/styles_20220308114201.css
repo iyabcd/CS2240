@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80vw;
+    margin: 20px auto;
+}
+.upper-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+.btn-primary {
+    background-color: black;
+}

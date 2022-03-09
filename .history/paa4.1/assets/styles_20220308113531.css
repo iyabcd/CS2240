@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.uppder-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

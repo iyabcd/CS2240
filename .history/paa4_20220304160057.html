@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/paa4/logo.png" type="image/icon type">
+    <title>PANES - PAA4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/paa4.css">
+</head>
+<body>
+    <section id="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./assets/paa4/logo 1.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://www.addu.edu.ph/vision-and-mission/" id="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.addu.edu.ph/contact-us/" id="#contact">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="landing">
+                <h2>Ateneo Management Webiste</h2>
+                <p>Create, update, delete, and search for a teacher, student or a subject.</p>
+                <a href="#explore" class="landing-btn">Proceed</a>
+            </div>
+        </div>
+    </section>
+    <section id="explore" class="explore">
+        <div class="explore-content">
+            <h2>What do you want to do?</h2>
+            <p>What/who do you want to create, update, delete, or search?</p>
+            <div class="explore-btn-box">
+                <a href="#teacher" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#teacher-modal">Teacher</a>
+                <a href="#student" type="button" class="btn btn-outline-light">Student</a>
+                <a href="#subject" type="button" class="btn btn-outline-light">Subject</a>
+            </div>
+        </div>
+    </section>
+    <!-- modals -->
+    <div class="modal fade" id="teacher-modal" tabindex="-1" role="dialog" aria-labelledby="teacher-modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">TEACHER</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <div class="col-sm6"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://kit.fontawesome.com/e3e225e013.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="./js/paa4.js"></script>
+</body>

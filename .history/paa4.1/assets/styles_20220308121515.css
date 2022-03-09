@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/assets/header.jpg);
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80vw;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.795);
+}
+.upper-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: 20px;
+}
+.upper-box h2 {
+    margin-top: 20px;
+}
+.upper-box .btn-primary {
+    background-color: #F3B700;
+}
+.lower-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background-color: #FAA300;
+    border: none;
+}
+.btn-danger {
+    background-color: #E57C04;
+    border: none;
+}

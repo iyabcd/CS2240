@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    height: 100vh;
+}
+/* header */
+.header {
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../assets/paa4/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.content {
+    height: 100vh;
+}
+nav {
+    display: flex;
+    padding: 1.5% 6%;
+    align-items: center;
+    background-color: rgba(4,9,30,0.7);
+    text-align: right;
+}
+nav img {
+    width: 500px;
+    flex: 1;
+}
+.navbar-nav a {
+    color: white;
+}
+.navbar-nav a:hover {
+    color: rgb(167, 167, 167);
+}
+.landing {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+}
+.landing h1 {
+    font-size: 62px;
+}
+.landing p {
+    font-size: 18px;
+    margin: 10px 0 50px;
+}
+.landing-btn {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 14px;
+    text-decoration: none;
+    width: fit-content;
+    transition: .5s;
+}
+.landing-btn:hover  {
+    border: 1px solid #CDC5B4;
+    background-color: #CDC5B4;
+    color: white;
+}
+/* explore */
+.explore {
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../assets/paa4/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.explore-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.explore-content h1 {
+    font-size: 54px;
+}
+.explore-content p {
+    font-size: 16px;
+    margin: 10px 0 50px;
+}
+.explore-btn-box{
+    margin: 0 auto;
+    padding: 10px;
+}
+/* media tag */
+@media screen and (max-width: 992px){
+
+}

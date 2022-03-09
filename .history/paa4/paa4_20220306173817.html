@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/paa4/logo.png" type="image/icon type">
+    <title>PANES - PAA4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./paa4.css">
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+
+</head>
+<body>
+    <section id="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../assets/paa4/logo 1.png" id="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://www.addu.edu.ph/vision-and-mission/" id="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.addu.edu.ph/contact-us/" id="#contact">Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="landing">
+                <h2>Ateneo Management Website</h2>
+                <p>Create, update, delete, and search for a teacher, student or a subject.</p>
+                <a href="#explore" class="landing-btn">Proceed</a>
+            </div>
+        </div>
+    </section>
+    <section id="explore" class="explore">
+        <div class="container">
+         <div class="explore-content">
+           
+          <div class="minimalTabs">
+  
+            <ul>
+              <li><a href="#Teacher">
+                <span>Teacher</span></a></li>
+              <li><a href="#Student">
+                <span>Student</span></a></li>
+              <li><a href="#Subject">
+                <span>Subject</span></a></li>
+            </ul>
+            
+            <div class="contents">
+            <div id="Teacher">
+              <h2>Teachers</h2>
+              <form action="">
+                <div class="col-sm-6 form-header">What do you want to do?</div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="form-check">
+                            <input class="form-check-input" oninput="disableTextbox()" type="radio" name="type" value="create">
+                            <label class="form-check-label" for="cash">Create</label>
+                            </div>
+                            <div class="form-check">
+                            <input class="form-check-input" oninput="disableTextbox()" type="radio" name="type" value="update">
+                            <label class="form-check-label" for="card">Update</label>
+                            </div>
+                            <div class="form-check">
+                            <input class="form-check-input" oninput="disableTextbox()" type="radio" name="type" value="delete">
+                            <label class="form-check-label" for="both">Delete</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-4">
+                          <label for="id">ID</label>
+                        </div>
+                        <div class="col-sm-4">
+                          <input type="number" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-id" name="teacher-id" disabled>
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-secondary" id="btn-check" disabled>Check</button>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-4">
+                          <label for="teacher-fname">First Name</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-fname" name="teacher-fname" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-4">
+                          <label for="teacher-lname">Last Name</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-lname" name="teacher-lname" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-4">
+                          <label for="teacher-mname">Middle Name</label>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-mname" name="teacher-mname" disabled>
+                        </div>
+                    </div>
+              </form>
+            </div>
+              
+            <div id="Student">
+              <h2>Student</h2>
+              <p>In mattis scelerisque tellus eget consectetur. Donec interdum sem arcu. Etiam molestie, ex nec pharetra vulputate, quam ante sodales nibh, quis consectetur metus neque at velit. Nam nec nibh vitae quam bibendum posuere non sit amet sapien.</p>
+              
+            </div>
+              
+            <div id="Subject">
+              <h2>Subject</h2>
+              <p>In mattis scelerisque tellus eget consectetur. Donec interdum sem arcu. Etiam molestie, ex nec pharetra vulputate, quam ante sodales nibh, quis consectetur metus neque at velit. Nam nec nibh vitae quam bibendum posuere non sit amet sapien. Pellentesque at nulla varius, malesuada nunc in, mattis lectus</p>
+           
+            </div>
+            </div>
+          </div>
+          
+         </div>
+        </div>
+    </section>
+    <!-- modals -->
+    <div class="modal fade" id="teacher-modal" tabindex="-1" role="dialog" aria-labelledby="teacher-modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">TEACHER</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="col-sm-6 form-header">What do you want to do?</div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="form-check">
+                                <input class="form-check-input" oninput="disableTextbox()" type="radio" name="type" value="create">
+                                <label class="form-check-label" for="cash">Create</label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" oninput="disableTextbox()" type="radio" name="type" value="update">
+                                <label class="form-check-label" for="card">Update</label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" oninput="disableTextbox()" type="radio" name="type" value="delete">
+                                <label class="form-check-label" for="both">Delete</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-4">
+                              <label for="id">ID</label>
+                            </div>
+                            <div class="col-sm-4">
+                              <input type="number" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-id" name="teacher-id" disabled>
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="btn btn-secondary" id="btn-check" disabled>Check</button>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-4">
+                              <label for="teacher-fname">First Name</label>
+                            </div>
+                            <div class="col-sm-8">
+                              <input type="text" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-fname" name="teacher-fname" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-4">
+                              <label for="teacher-lname">Last Name</label>
+                            </div>
+                            <div class="col-sm-8">
+                              <input type="text" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-lname" name="teacher-lname" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-4">
+                              <label for="teacher-mname">Middle Name</label>
+                            </div>
+                            <div class="col-sm-8">
+                              <input type="text" min=0 ondrop="return false" onpaste="return false" class="form-control" id="teacher-mname" name="teacher-mname" disabled>
+                            </div>
+                        </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+<script src="https://kit.fontawesome.com/e3e225e013.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="./database.js"></script>
+<script src="./paa4.js"></script>
+</body>

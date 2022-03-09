@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.landing .container, .explore .container {
+    height: 100vh;
+}
+/* header */
+.header {
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../assets/paa4/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.content {
+    height: 100vh;
+}
+nav {
+    display: flex;
+    padding: 1.5% 6%;
+    align-items: center;
+    background-color: rgba(4,9,30,0.7);
+    text-align: right;
+}
+nav img {
+    width: 500px;
+    flex: 1;
+}
+.navbar-nav a {
+    color: white !important;
+}
+.navbar-nav a:hover {
+    color: rgb(167, 167, 167) !important;
+}
+.landing {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+}
+.landing h1 {
+    font-size: 62px;
+}
+.landing p {
+    font-size: 18px;
+    margin: 10px 0 50px;
+}
+.landing-btn {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 14px;
+    text-decoration: none;
+    width: fit-content;
+    transition: .5s;
+}
+.landing-btn:hover  {
+    border: 1px solid #CDC5B4;
+    background-color: #CDC5B4;
+    color: white;
+}
+/* explore */
+.explore {
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../assets/paa4/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.explore-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: white;
+}
+.explore-content h1 {
+    font-size: 54px;
+}
+.explore-content p {
+    font-size: 16px;
+    margin: 10px 0 50px;
+}
+.explore-btn-box{
+    margin: 0 auto;
+}
+/* media tag */
+@media screen and (max-width: 992px){
+    .navbar-brand {
+    visibility: hidden;
+}
+}
+
+
+/* plugins - minimal tabs */
+.minimalTabs {
+    width: 90%;
+    min-width: 360px;
+    margin: auto;
+  }
+  .contents {
+    padding: 20px 50px;
+    min-height: 200px;
+  }
+  .lightTab {
+    padding: 50px 0;
+  }
+  .minimalTabs > ul {
+    text-align: center;
+    font-weight: 500;
+    margin: 50px 0 0;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .minimalTabs > ul > li {
+    display: inline-block;
+    background: #fafafa;
+    padding: 0.6em 0;
+    position: relative;
+    width: 33%;
+    margin: 0 0 0 -4px;
+  }
+  .minimalTabs > ul > li:before, .minimalTabs > ul > li:after {
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .minimalTabs > ul > li.ui-tabs-active:before, .minimalTabs > ul > li.ui-tabs-active:after, .minimalTabs > ul > li.ui-state-hover:before, .minimalTabs > ul > li.ui-state-hover:after, .minimalTabs > ul > li.ui-state-focus:before, .minimalTabs > ul > li.ui-state-focus:after {
+    opacity: 1;
+  }
+  .minimalTabs > ul > li:before, .minimalTabs > ul > li.ui-state-active.ui-state-hover:before, .minimalTabs > ul > li.ui-state-active.ui-state-focus:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 2px 3px rgba(105, 105, 105, 0.5);
+    top: 50%;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    border-radius: 100px / 10px;
+  }
+  .minimalTabs > ul > li:after, .minimalTabs > ul > li.ui-state-active.ui-state-hover:after, .minimalTabs > ul > li.ui-state-active.ui-state-focus:after {
+    content: "";
+    background: #fafafa;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+    box-shadow: inset 3px 3px 3px rgba(105, 105, 105, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  .minimalTabs > ul > li.ui-state-hover:before, .minimalTabs > ul > li.ui-state-focus:before {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .minimalTabs > ul > li.ui-state-hover:after, .minimalTabs > ul > li.ui-state-focus:after {
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  .minimalTabs > ul > li.ui-state-focus a {
+      color: rgb(18, 5, 139) !important;
+  }
+  .minimalTabs > ul > li:focus {
+    outline: none;
+  }
+  .minimalTabs > ul > li a {
+    color: #444;
+    text-decoration: none;
+  }
+  .minimalTabs > ul > li a:focus {
+    outline: none;
+  }
+  .minimalTabs > ul > li a span {
+    position: relative;
+    top: -0.5em;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .darkTab,
+    .lightTab {
+      width: 50%;
+      float: left;
+      padding: 0;
+    }
+  }

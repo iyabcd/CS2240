@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="container uppe-box">
+  <h2><%= title %></h2>
+  <a href="/add" class="btn btn-sm btn-primary">Add teacher</a><br/><br/>
+</div>
+<div class="container lower-box">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% teachers.forEach(function(teacher){ %>
+            <tr>
+                <td><%= teacher.teacher_id %></td>
+                <td><%= teacher.teacher_lname %></td>
+                <td><%= teacher.teacher_fname %></td>
+                <td><%= teacher.teacher_mname %></td>
+                <td>
+                    <a href="edit/<%= teacher.teacher_id %>" class="btn btn-sm btn-primary">Edit</a>
+                    <a href="delete/<%= teacher.teacher_id %>" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        <% }); %>
+    </tbody>
+  </table>
+</div>
+  
+</div>
+
+</body>
+</html>

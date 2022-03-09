@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    ---primary: black;
+    ---secondary: grey;
+    ---tertiary: #ECA400;
+    ---quaternary: #5D2E8C;
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80vw;
+    margin: 20px auto;
+}
+.upper-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}

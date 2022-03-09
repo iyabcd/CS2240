@@ -1,0 +1,25 @@
+{
+  "name": "paa4",
+  "version": "1.0.0",
+  "description": "app dev paa4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyabcd/CS2240.git"
+  },
+  "author": "Julienne Andrea S. Panes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iyabcd/CS2240/issues"
+  },
+  "homepage": "https://github.com/iyabcd/CS2240#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

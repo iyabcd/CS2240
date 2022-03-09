@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/assets/paa4/bg.jfif);
+}
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 80vw;
+    margin: 20px auto;
+}
+.upper-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+.upper-box .btn-primary {
+    background-color: #F3B700;
+}
+.btn-primary {
+    background-color: #FAA300;
+    border: none;
+}
+.btn-danger {
+    background-color: #E57C04;
+    border: none;
+}
