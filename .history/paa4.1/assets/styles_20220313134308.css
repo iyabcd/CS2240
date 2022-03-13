@@ -22,9 +22,6 @@ h2 {
     text-align: center;
     color: black;
 }
-.container .title p {
-    font-size: 20px;
-}
 .navbar {
     position: sticky;
     top: 0;

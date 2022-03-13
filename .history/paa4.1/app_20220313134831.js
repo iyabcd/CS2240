@@ -118,7 +118,7 @@ app.get('/teachers/search/', [
         res.redirect('/teachers');
     }else{      
         const { term } = req.query;
-        let sql = `SELECT * FROM teachers WHERE teacher_id LIKE '${term}' OR teacher_lname LIKE '${term}' OR teacher_fname LIKE '${term}' OR teacher_mname LIKE '${term}'`;
+        let sql = `SELECT * FROM teachers WHERE teacher_id LIKE '${term} ' OR teacher_lname LIKE '${term}' OR teacher_fname LIKE '${term}' OR teacher_mname LIKE '${term}'`;
         let query = connection.query(sql, (err,rows) => {
             if(err) throw err;
             if(rows.length < 1){
@@ -252,7 +252,7 @@ app.get('/subjects',(req, res) => {
 });
 //add subject
 app.post('/subjects/save', [
-    check('subject_title').isLength({min:1}).matches(/^[A-Za-z -]+$/),
+    check('subject_title').isLength({min:1}).matches(/^[A-Za-z\s]+$/),
     check('subject_no').isLength({min:1}).matches(/^[a-zA-Z 0-9]+$/),
     check('transcript_load').matches(/^[0-9]+$/),
     check('paying_load').matches(/^[0-9]+$/),
@@ -275,7 +275,7 @@ app.post('/subjects/save', [
 });
 //update subject
 app.post('/subjects/update',[
-    check('subject_title').isLength({min:1}).matches(/^[A-Za-z -]+$/),
+    check('subject_title').isLength({min:1}).matches(/^[A-Za-z\s]+$/),
     check('subject_no').isLength({min:1}).matches(/^[a-zA-Z 0-9]+$/),
     check('transcript_load').matches(/^[0-9]+$/),
     check('paying_load').matches(/^[0-9]+$/),

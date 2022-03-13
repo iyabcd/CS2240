@@ -252,7 +252,7 @@ app.get('/subjects',(req, res) => {
 });
 //add subject
 app.post('/subjects/save', [
-    check('subject_title').isLength({min:1}).matches(/^[A-Za-z -]+$/),
+    check('subject_title').isLength({min:1}).matches(/^[A-Za-z\s]+$/),
     check('subject_no').isLength({min:1}).matches(/^[a-zA-Z 0-9]+$/),
     check('transcript_load').matches(/^[0-9]+$/),
     check('paying_load').matches(/^[0-9]+$/),
@@ -275,13 +275,14 @@ app.post('/subjects/save', [
 });
 //update subject
 app.post('/subjects/update',[
-    check('subject_title').isLength({min:1}).matches(/^[A-Za-z -]+$/),
+    check('subject_title').isLength({min:1}).matches(/^[A-Za-z\s]+$/),
     check('subject_no').isLength({min:1}).matches(/^[a-zA-Z 0-9]+$/),
     check('transcript_load').matches(/^[0-9]+$/),
     check('paying_load').matches(/^[0-9]+$/),
     check('teaching_load').matches(/^[0-9]+$/)
 ], (req, res) => {
     const errors = validationResult(req);
+    console.log(errors)
     if(!errors.isEmpty()){
         req.flash('message', 'Input must be LETTERS only for TITLE, LETTERS AND NUMBERS for NUMBER, and NUMBERS ONLY for LOADS. Fields should not be empty. Please try again!');
         res.redirect('/subjects');

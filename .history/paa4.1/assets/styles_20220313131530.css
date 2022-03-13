@@ -12,18 +12,8 @@ h2 {
     padding-top: 50px;
     text-align: center;
 }
-.container .title {
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.795);
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: black;
-}
-.container .title p {
-    font-size: 20px;
+.title {
+    height: 100px;
 }
 .navbar {
     position: sticky;

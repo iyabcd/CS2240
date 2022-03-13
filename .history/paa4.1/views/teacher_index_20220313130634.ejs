@@ -2,6 +2,12 @@
   <%- include('partials/partials') %>
 <body>
 
+  <% if(message.length > 0) { %>
+    <div class="alert alert-info"  id="alert">
+      <%= message %>
+    </div>
+  <% } %>
+
 <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="/"><img class="logo"></a>
@@ -10,14 +16,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="/teachers">Teachers</a>
-            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/students">Student</a>
+            <a class="nav-link" href="/" id="#about">Teachers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/subjects">Subject</a>
+                <a class="nav-link" href="/students" id="#contact">Student</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/subjects" id="#contact">Subject</a>
           </li>
         </ul>
         </div>
@@ -29,26 +35,19 @@
   <div class="container upper-box">
     <div class="row">
       <div class="col-sm-4 m-auto">
-        <a class="btn btn-sm btn-primary mt-4"  data-toggle="modal" data-target="#addStudent"><i class="fas fa-user-graduate"></i> Add</a><br/><br/>
+        <a class="btn btn-sm btn-primary mt-4"  data-toggle="modal" data-target="#addTeacher"><i class="fas fa-chalkboard-teacher"></i> Add</a><br/><br/>
       </div>
       <div class="col-sm-8 m-auto">
-        <form action="/students/search">
+        <form action="/teachers/search">
           <div class="input-group">
             <input type="search" name="term" class="form-control" placeholder="Last, First, or Middle Name" required>
             <button class="btn btn-primary"><i class="fas fa-search"></i></button>
           </div>
         </form>
       </div>
-      <div class="row ml-auto mr-auto mt-5">
-        <% if(message.length > 0) { %>
-          <div class="alert alert-info" id="alert">
-            <%= message %>
-          </div>
-          <% } %>
-      </div>
     </div>
   </div>
-  <a href="/students" class="refresh-btn">Refresh <i class="fas fa-sync"></i></a>
+  <a href="/" class="refresh-btn">Refresh <i class="fas fa-sync"></i></a>
   <div class="container lower-box"> 
     <table class="table m-4 p-4">
       <thead>
@@ -60,36 +59,36 @@
         </tr>
       </thead>
       <tbody>
-          <% students.forEach(function(student){ %>
+          <% teachers.forEach(function(teacher){ %>
               <tr>
-                  <td><%= student.student_id %></td>
-                  <td><%= student.student_lname %></td>
-                  <td><%= student.student_fname %></td>
-                  <td><%= student.student_mname %></td>
+                  <td><%= teacher.teacher_id %></td>
+                  <td><%= teacher.teacher_lname %></td>
+                  <td><%= teacher.teacher_fname %></td>
+                  <td><%= teacher.teacher_mname %></td>
                   <!-- update modal -->
-                <div class="modal fade" id="updateStudent<%= student.student_id %>" tabindex="-1" role="dialog" aria-labelledby="updateStudent" aria-hidden="true">
+                <div class="modal fade" id="updateTeacher<%= teacher.teacher_id %>" tabindex="-1" role="dialog" aria-labelledby="updateTeacher" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="updatestudent">Update a student</h5>
+                        <h5 class="modal-title" id="updateTeacher">Update a Teacher</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <form action="/students/update" method="post">
+                        <form action="/teachers/update" method="post">
                           <div class="form-group">
-                              <label for="student_id" id="id-box">ID</label>
-                              <input class="id-box" type="number" value="<%= student.student_id %>" name="student_id" readonly>
+                              <label for="teacher_id" id="id-box">ID</label>
+                              <input class="id-box" type="number" value="<%= teacher.teacher_id %>" name="teacher_id" readonly>
                           </div>
                           <div class="form-group">                      
-                            <input type="text" class="form-control" id="student_lname" placeholder="<%= student.student_lname %>" value="<%= student.student_lname %>" name="student_lname" required>
+                            <input type="text" class="form-control" id="teacher_lname" placeholder="<%= teacher.teacher_lname %>" value="<%= teacher.teacher_lname %>" name="teacher_lname" required>
                           </div>
                           <div class="form-group">
-                            <input type="text" class="form-control" id="student_fname" placeholder="<%= student.student_fname %>" value="<%= student.student_fname %>" name="student_fname" required>
+                            <input type="text" class="form-control" id="teacher_fname" placeholder="<%= teacher.teacher_fname %>" value="<%= teacher.teacher_fname %>" name="teacher_fname" required>
                           </div>
                           <div class="form-group">
-                            <input type="text" class="form-control" id="student_mname" placeholder="<%= student.student_mname %>" value="<%= student.student_mname %>" name="student_mname" required>
+                            <input type="text" class="form-control" id="teacher_mname" placeholder="<%= teacher.teacher_mname %>" value="<%= teacher.teacher_mname %>" name="teacher_mname" required>
                           </div>
                           <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
@@ -98,10 +97,10 @@
                   </div>
                 </div>
                   <td class="text-center">
-                    <a class="btn btn-sm btn-primary" data-toggle="modal" data-target="#updateStudent<%= student.student_id %>"><i class="fas fa-edit"></i> Update</a>
+                    <a class="btn btn-sm btn-primary" data-toggle="modal" data-target="#updateTeacher<%= teacher.teacher_id %>"><i class="fas fa-edit"></i> Update</a>
                   </td>
                   <td class="text-center">
-                    <a href="/students/delete/<%= student.student_id %>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Delete</a>
+                    <a href="/teachers/delete/<%= teacher.teacher_id %>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Delete</a>
                   </td>
               </tr>
           <% }); %>
@@ -111,25 +110,25 @@
 </div>
 
 <!-- add modal -->
-<div class="modal fade" id="addStudent" tabindex="-1" role="dialog" aria-labelledby="addStudent" aria-hidden="true">
+<div class="modal fade" id="addTeacher" tabindex="-1" role="dialog" aria-labelledby="addTeacher" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="addstudent">Add a Student</h5>
+        <h5 class="modal-title" id="addTeacher">Add a Teacher</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form action="/students/save" method="post">
+        <form action="/teachers/save" method="post">
           <div class="form-group">
-              <input type="text" class="form-control" id="student_lname" placeholder="Enter Last Name" name="student_lname" required>
+              <input type="text" class="form-control" id="teacher_lname" placeholder="Enter Last Name" name="teacher_lname" required>
           </div>
           <div class="form-group">
-              <input type="text" class="form-control" id="student_fname" placeholder="Enter First Name" name="student_fname" required>
+              <input type="text" class="form-control" id="teacher_fname" placeholder="Enter First Name" name="teacher_fname" required>
           </div>
           <div class="form-group">
-              <input type="text" class="form-control" id="student_mname" placeholder="Enter Middle Name" name="student_mname" required>
+              <input type="text" class="form-control" id="teacher_mname" placeholder="Enter Middle Name" name="teacher_mname" required>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
